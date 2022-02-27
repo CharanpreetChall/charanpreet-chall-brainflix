@@ -1,0 +1,68 @@
+body {
+    font-family:sans-serif;
+}
+h1, h2, h3, h4 {
+    font-weight: 400;
+    margin: 0;
+}
+
+h2, h3, h4{
+    font-size: 0.85rem;
+    display:inline
+}
+
+
+
+.hero-video{
+
+     &__video {
+        width: 100%;
+        padding-top: 2%;
+     }
+
+     &__details{
+        padding: 0 5%;
+     }
+     &__heading {
+         padding: 5% 0;
+     }
+     &__information {
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+        padding: 4% 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        height: 4rem;
+        align-items: center;
+        
+        &__title {
+
+        }
+
+        &-date{
+           
+        }
+        
+        &-views{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 32%;
+            padding:0 18% 0 22%;
+        }
+
+        &-likes{
+            display: flex;
+            flex-direction: row;
+            padding:0 23% 0 22%;
+            justify-content: space-between;
+            width: 26%;
+        }
+     }
+
+     &__description{
+        font-size: 0.83rem;
+        line-height: 1.15rem;
+     }
+}

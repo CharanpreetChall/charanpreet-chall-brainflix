@@ -1,17 +1,21 @@
 import './Navigation.scss';
+import logo from "../../assets/Logo/BrainFlix-logo.svg";
+import avatar from "../../assets/Images/Mohan-muruge.jpg"
 
 function Navigation() {
   return (
-    <nav>
-        <a className="nav__logo">
-            <img src="./src/assets/Logo/BrainFlix-logo.svg" className="logo" alt="logo" />
+    <div>
+    <nav className='nav'>
+        <a href="/" className="nav__logo-link">
+            <img src={logo} className="nav__logo" alt="logo" />
         </a>
         <form className="nav__form">
-            <input type="txt" placeholder="search" className="nav__form-search" />
-            <button className="nav__button">UPLOAD</button>
-            <img className="nav__form-image" src="./src/assets/Images/Mohan-muruge.jpg" alt="Mohan Muruge image"/>
+            <input type="txt" placeholder="Search" className="nav__form-search" />
+            <img className="nav__form-image avatar" src={avatar} alt="Mohan Muruge"/>
+            <button className="nav__form-button">UPLOAD</button>
         </form>
     </nav>
+    </div>
   )
 }
 

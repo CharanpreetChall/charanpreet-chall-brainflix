@@ -1,20 +1,46 @@
 import './Comments.scss';
+import CommentsSection from '../CommentsSection/CommentsSection'
+import avatar from "../../assets/Images/Mohan-muruge.jpg"
 
-function Comments() {
-  return (
+function Comments({comments}) {
+  
+  let commentCounter= [0]
+  
+  return ( 
     <section className="comments">
-    <h2 className="comments__number">3 Comments</h2>
-    <div className="comments__box">
-        <h3 className="comments__box-heading">Join the Conversation</h3>
-        <img className="comments__box-image" src="./assets/images/Mohan-muruge.jpg" />
+
+    {comments.forEach(comment => {
+      commentCounter++
+    })}
+
+    <h2 className="comments__count">{commentCounter} Comments</h2>
+
+    <div className="comments__container">
+        <h3 className="comments__container-heading">JOIN THE CONVERSATION</h3>
+        <img className="comments__container-image avatar" src={avatar} alt="Mohan" />
+
         <form className="comments__form" action="" method="">
-            <label className="comments__form-comment" for="comments__form-comment">COMMENT</label>
-            <textarea className="comments__form-comment-box" max="10" id="comments__form-comment" name="comments__form-comment" placeholder="Add a new comment"></textarea>
-            <button className="comments__form-button">COMMENT</button>
+          <textarea className="comments__form-comment-box" rows="5" id="comments__form-comment" name="comments__form-comment" placeholder="Add a new comment"></textarea>
+          <button className="comments__form-button">COMMENT</button>
         </form>
     </div> 
+
+    <div className="comments-section__item">
+
+     {comments.map(comment =>{
+       return (
+         <CommentsSection 
+         key= {comment.name}
+         name= {comment.name} 
+         timestamp= {comment.timestamp} 
+         comment= {comment.comment}
+         />
+       )
+     })}
+     </div>
 </section>
   )
 }
+
 
 export default Comments;

@@ -1,0 +1,110 @@
+
+.comments-section {
+    padding: 0 5%;
+    font-size: 0.8rem;
+    border-bottom: 1px solid grey;
+
+    &__item {
+        height: 7.5rem;
+        border-top: 1px solid grey;
+        padding-top: 5%;
+        &-image{
+        background-color:lightgrey;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        }
+    
+        
+        &-details{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: relative;
+            left: 18%;
+            top: -2.4rem;;
+
+            &__date{
+    
+            }
+
+            &__name{
+
+            }
+
+            &__comment{
+    
+                }
+        }
+        
+    }
+}
+
+
+
+// .comment-section{
+//     font-size: 0.8rem;
+//     padding: 2.5% 0 0 2%;
+
+//     @include tablet {
+//          font-size: 0.9rem;
+//          padding: 1.8% 0 0 2%;
+//      }
+
+//      @include desktop {
+//          padding: 3% 0 0 2%;
+//          }
+
+//      &-image {
+//          @extend .comments__image;
+//          background-color: $color-primary-one;
+//          margin: 0 3% 0 0;
+//          position: relative;
+//          top: -1.3rem;
+//          right:0.6rem;
+
+//          @include tablet {
+//              top: -1.4rem;
+//              left: 3rem;
+//          }
+//      }
+
+//      &-card{
+//          @extend .comments__form;
+//          bottom:2.4rem;
+//          border-top: 2px solid $color-secondary-two;
+//          padding-top:5%;
+
+//          @include tablet {
+//              padding: 5% 1% 1%;
+//              left:2.4rem;
+//              bottom: 3.5rem;
+//          }
+
+//          @include desktop {
+//              width:78%;
+//              padding-bottom: 1.9%
+//          }
+//      }
+
+//      &-header{
+//          display: flex;
+//          flex-direction: row;
+//          width: 100%;
+//          justify-content: space-between;
+//      }
+
+//          &-comment {
+//              width: 100%;
+//              padding: 3% 0 2%; 
+//              line-height: 1.18rem;
+
+//              @include tablet {
+//                  padding: 1.6% 0 2.5% 0;
+//                  line-height: 1.3rem;
+//              }
+//          }
+//      } 
+ 
+

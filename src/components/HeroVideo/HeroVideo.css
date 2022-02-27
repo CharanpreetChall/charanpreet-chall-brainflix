@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+  margin: 0;
+}
+
+h2, h3, h4 {
+  font-size: 0.85rem;
+  display: inline;
+}
+
+.hero-video__video {
+  width: 100%;
+  padding-top: 2%;
+}
+.hero-video__details {
+  padding: 0 5%;
+}
+.hero-video__heading {
+  padding: 5% 0;
+}
+.hero-video__information {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding: 4% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 4rem;
+  align-items: center;
+}
+.hero-video__information-views {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 32%;
+  padding: 0 18% 0 22%;
+}
+.hero-video__information-likes {
+  display: flex;
+  flex-direction: row;
+  padding: 0 23% 0 22%;
+  justify-content: space-between;
+  width: 26%;
+}
+.hero-video__description {
+  font-size: 0.83rem;
+  line-height: 1.15rem;
+}/*# sourceMappingURL=HeroVideo.css.map */

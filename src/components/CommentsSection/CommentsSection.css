@@ -1,0 +1,25 @@
+.comments-section {
+  padding: 0 5%;
+  font-size: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+.comments-section__item {
+  height: 7.5rem;
+  border-top: 1px solid grey;
+  padding-top: 5%;
+}
+.comments-section__item-image {
+  background-color: lightgrey;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.comments-section__item-details {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  left: 18%;
+  top: -2.4rem;
+}/*# sourceMappingURL=CommentsSection.css.map */
