@@ -1,10 +1,10 @@
+import './App.scss';
 import Navigation from './components/Navigation/Navigation';
 import HeroVideo from './components/HeroVideo/HeroVideo';
 import Comments from './components/Comments/Comments';
-// import CommentsSection from './components/CommentsSection/CommentsSection';
 import Videos from './components/Videos/Videos';
 import videoDetails from './data/video-details.json';
-// import videoListData from './data/videos.json';
+import videoListData from './data/videos.json';
 import React from 'react';
 
 
@@ -13,6 +13,7 @@ class App extends React.Component {
   state = {
         videos: videoDetails,
         currentVideo: videoDetails[0],
+        videoList: videoListData,
     }
 
 updateHeroVideo= (videoId) => {
@@ -22,11 +23,10 @@ updateHeroVideo= (videoId) => {
   this.setState({currentVideo: newCurrentVideo})
 }
 
-
 render() {
-  const { videos, currentVideo} = this.state;
+  const { videoList, currentVideo} = this.state;
 
-  const filteredVideo =videos.filter((video) =>{
+  const filteredVideo =videoList.filter((video) =>{
     return video.id !== currentVideo.id;
   })
 
@@ -42,7 +42,7 @@ return (
     views= {currentVideo.views}
     likes= {currentVideo.likes}
     description= {currentVideo.description} 
-    //add duration
+    duration= {currentVideo.duration} 
     />
 
     <Comments comments= {currentVideo.comments}/>

@@ -2,59 +2,39 @@
 //Main font
 @font-face {
     font-family: 'Avenir';
-    src: url(/assets/fonts/AvenirNextLTPro-Regular.otf);
+    src: url(../../assets/Font/AvenirNextLTPro-Regular.otf);
 }
 
 @font-face {
     font-family: 'Avenir';
-    src: url(/assets/fonts/AvenirLTProMedium.otf);
+    src: url(../../assets/Font/AvenirNextLTPro-Demi.otf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Avenir';
-    src: url(/assets/fonts/AvenirNextLTPro-Demi.otf);
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: 'Avenir';
-    src: url(/assets/fonts/AvenirNextLTPro-Bold.otf);
+    src: url(../../assets/Font/AvenirNextLTPro-Bold.otf);
     font-weight: 700;
 }
 
-//Alternate font 1
+//Alternate files
 @font-face {
     font-family: 'Avenir-Alt';
-    src: url(/assets/fonts/alternative-files/AvenirNextLTPro.ttf);
+    src: url(../../assets/Font/AvenirNextLTPro.ttf);
 }
 
 @font-face {
     font-family: 'Avenir-Alt';
-    src: url(/assets/fonts/alternative-files/AvenirNextLTProDemi.ttf);
+    src: url(../../assets/Font/AvenirNextLTProDemi.ttf);
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'Avenir-Alt';
-    src: url(/assets/fonts/alternative-files/AvenirNextLTProBold.ttf);
+    src: url(../../assets/Font/AvenirNextLTProBold.ttf);
     font-weight: 700;
 }
 
-//Alternate font 2
-@font-face {
-    font-family: 'Montserrat';
-    src: url(/assets/fonts/alternative-files/Montserrat-Regular.ttf);
-}
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url(/assets/fonts/alternative-files/Montserrat-SemiBold.ttf);
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url(/assets/fonts/alternative-files/Montserrat-Bold.ttf);
-    font-weight: 700;
-}
+$font-stack: "Avenir", "Avenir-Alt", sans-serif;
+$root-font-size: 16px;
