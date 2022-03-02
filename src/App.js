@@ -15,10 +15,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/upload" component={Upload} />
-<<<<<<< HEAD
-=======
+        //Route for selected video (updated url as per key of the video)
         <Route render={() => <h1>ERROR NOT FOUND</h1>} />
->>>>>>> components
       </Switch>
     </BrowserRouter>
 
