@@ -6,6 +6,9 @@ import videoDetails from '../../data/video-details.json';
 import videoListData from '../../data/videos.json';
 import React from 'react';
 
+const API_key= {
+  "api_key": "fbb11fd1-b1f6-4147-a8ae-a87205ac574f"
+  }
 
 class Home extends React.Component {
 
