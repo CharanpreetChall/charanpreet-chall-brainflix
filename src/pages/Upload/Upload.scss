@@ -1,0 +1,70 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/typography' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/global' as *;
+
+.upload {
+
+    border-top: 1px solid $color-secondary-mercury;
+    padding: 2% 5%;
+
+    &__heading{
+    font-size: 1.5rem;
+    padding: 6% 0;
+    }
+
+    &__details{
+        display: flex;
+        flex-direction: column;
+
+        &-video{
+
+            &-heading{
+            font-weight: 500;
+            font-size: 0.75rem;
+
+            }
+            &-thumbnail{
+                padding: 2% 0;
+                width: 90vw;
+                border-radius: 10px; //Fix this
+            }
+        }
+
+    &-form{
+        display: flex;
+        flex-direction: column;
+
+        &-title{
+            font-weight: 500;
+            font-size: 0.75rem;
+            padding: 2% 0;
+        }
+        &-box{
+            padding: 3%;
+            font-family: $font-stack;
+            height: 1rem;
+            background-color: $color-secondary-alabaster;
+            border-color: $color-secondary-mercury;
+            border-radius: 4px;
+            border-style:solid;
+        }
+    }
+}
+
+    &__button{
+
+
+        &-publish{
+            padding: 5%;
+            font-size: 0.7rem;
+            margin: 8% 0 15%;
+        }
+
+        &-cancel{
+            background-color: white;
+            color:  $color-primary-blue;
+        }
+    }
+}

@@ -1,58 +1,25 @@
 import './App.scss';
 import Navigation from './components/Navigation/Navigation';
-import HeroVideo from './components/HeroVideo/HeroVideo';
-import Comments from './components/Comments/Comments';
-import Videos from './components/Videos/Videos';
-import videoDetails from './data/video-details.json';
-import videoListData from './data/videos.json';
+import Home from './pages/Home/Home';
+import Upload from './pages/Upload/Upload';
 import React from 'react';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 
-class App extends React.Component {
+function App() {
 
-  state = {
-        videos: videoDetails,
-        currentVideo: videoDetails[0],
-        videoList: videoListData,
-    }
+  return (
 
-updateHeroVideo= (videoId) => {
-  const newCurrentVideo = this.state.videos.find((video) => {
-    return video.id === videoId;
-  })
-  this.setState({currentVideo: newCurrentVideo})
+    <BrowserRouter>
+      <Navigation />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/upload" component={Upload} />
+        <Route render={() => <h1>ERROR NOT FOUND</h1>} />
+      </Switch>
+    </BrowserRouter>
+
+  )
 }
-
-render() {
-  const { videoList, currentVideo} = this.state;
-
-  const filteredVideo =videoList.filter((video) =>{
-    return video.id !== currentVideo.id;
-  })
-
-return (
-  <>
-    <Navigation />
-
-    <HeroVideo 
-    image = {currentVideo.image}
-    title= {currentVideo.title}
-    channel= {currentVideo.channel}
-    timestamp= {currentVideo.timestamp}
-    views= {currentVideo.views}
-    likes= {currentVideo.likes}
-    description= {currentVideo.description} 
-    duration= {currentVideo.duration} 
-    />
-
-    <Comments comments= {currentVideo.comments}/>
-
-    <Videos videos ={filteredVideo}
-    clickHandler= {this.updateHeroVideo}/>
-  </>
-)
-}
-}
-
 
 export default App;
