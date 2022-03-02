@@ -15,10 +15,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/upload" component={Upload} />
-<<<<<<< HEAD
-=======
         <Route render={() => <h1>ERROR NOT FOUND</h1>} />
->>>>>>> components
       </Switch>
     </BrowserRouter>
 
