@@ -8,12 +8,14 @@ import fullScreenIcon from '../../assets/Icons/fullscreen.svg';
 import voulumeUpIcon from '../../assets/Icons/volume_up.svg';
 
 
-function HeroVideo({ image, title, channel, timestamp, views, likes, description, duration }) {
+function HeroVideo(props) {
 
-    const newDate = new Date(timestamp);
+    const { image, title, channel, timestamp, views, likes, description, duration } = props.currentVideo;
+   
+    // const newDate = new Date(timestamp);
 
-    const options = { month: '2-digit', day: '2-digit', year: 'numeric' };
-    const formattedDate = new Intl.DateTimeFormat("en-US", options).format(newDate);
+    // const options = { month: '2-digit', day: '2-digit', year: 'numeric' };
+    // const formattedDate = new Intl.DateTimeFormat("en-US", options).format(newDate);
 
 
     return (
@@ -48,7 +50,7 @@ function HeroVideo({ image, title, channel, timestamp, views, likes, description
                         <h3 className="hero-video__views-count">{views}</h3>
                     </div>
 
-                    <h3 className="hero-video__information-date">{formattedDate}</h3>
+                    <h3 className="hero-video__information-date">{timestamp}</h3>
 
                     <div className="hero-video__information-likes">
                         <img className="hero-video__likes-icon" src={likesIcon} alt={title} />
@@ -60,6 +62,8 @@ function HeroVideo({ image, title, channel, timestamp, views, likes, description
                     <p className="hero-video__description-paragraph">{description}</p>
                 </div>
             </div>
+
+
         </section>
 
     )

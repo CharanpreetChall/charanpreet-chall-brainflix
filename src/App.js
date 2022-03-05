@@ -14,6 +14,7 @@ function App() {
       <Navigation />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/videos/:id" component={Home} />
         <Route exact path="/upload" component={Upload} />
         <Route render={() => <h1>ERROR NOT FOUND</h1>} />
       </Switch>

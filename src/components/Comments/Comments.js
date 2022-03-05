@@ -9,16 +9,21 @@ function Comments({comments}) {
 
   let commentCounter= [0]
   
+  // for(let i=0; i < commentSection.length)
+  
   return ( 
     
     <section className="comments">
 
-    {comments.forEach(comment => {
+    {/* {comments.forEach(comment => {
       commentCounter++
-    })}
+    })} */}
 
-    <h2 className="comments__count">{commentCounter} Comments</h2>
 
+
+    {/* <h2 className="comments__count">{commentCounter} Comments</h2> */}
+    <h2 className="comments__count">3 Comments</h2> 
+    {/* //array.length for the comments */}
     <div className="comments__container">
         <h3 className="comments__container-heading">JOIN THE CONVERSATION</h3>
         <img className="comments__container-image avatar" src={avatar} alt="Mohan" />
@@ -37,7 +42,7 @@ function Comments({comments}) {
      {comments.map(comment =>{
        return (
          <CommentsSection 
-         key= {comment.name}
+         key= {comment.id}
          name= {comment.name} 
          timestamp= {comment.timestamp} 
          comment= {comment.comment}
