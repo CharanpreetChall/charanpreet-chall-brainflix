@@ -1,8 +1,8 @@
-@use '../../styles/partials/colors' as *;
-@use '../../styles/partials/typography' as *;
-@use '../../styles/partials/variables' as *;
-@use '../../styles/partials/mixins' as *;
-@use '../../styles/global' as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/global" as *;
 
 .comments-section {
     padding: 0 5%;
@@ -17,32 +17,29 @@
         border: none;
     }
 
-
     &__item {
         height: 7.5rem;
         border-top: 1px solid $color-secondary-mercury;
         padding: 6% 0 2%;
-        
-        @include tablet {
-        padding: 3% 0 0;
-        height: 5.8rem;
-        }
-
-
-        &-image{
-        background-color: $color-secondary-mercury;
-        width: 2.2rem;
-        height: 2.2rem;
-        border-radius: 50%;
 
         @include tablet {
-            width: 2.5rem;
-            height: 2.5rem;
+            padding: 3% 0 0;
+            height: 5.8rem;
         }
+
+        &-image {
+            background-color: $color-secondary-mercury;
+            width: 2.2rem;
+            height: 2.2rem;
+            border-radius: 50%;
+
+            @include tablet {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
         }
-    
-        
-        &-details{
+
+        &-details {
             width: 80%;
             display: flex;
             flex-wrap: wrap;
@@ -55,14 +52,13 @@
                 left: 9%;
                 width: 90%;
             }
-        } 
+        }
     }
-    &__comment{
+    &__comment {
         padding-top: 5%;
 
         @include tablet {
-        padding-top: 2%;
+            padding-top: 2%;
         }
-        }
+    }
 }
-

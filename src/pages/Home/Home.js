@@ -33,39 +33,39 @@ class Home extends React.Component {
       .get(`${url}videos/${videoId}${API_key}`)
       .then(response => {
         this.setState({ currentVideo: response.data })
+        window.scrollTo(0, 0)
       }).catch(e => console.log("error"))
   }
 
   componentDidUpdate(prevProps, prevState) {
+    const videoId = this.props.match.params.id || this.state.videos[0].id;
 
     if (prevProps.match.params.id !== this.props.match.params.id) {
-      this.getVideo(this.props.match.params.id);
+      this.getVideo(videoId);
     }
   }
-
 
   render() {
     const { videos, currentVideo } = this.state;
 
-    // const videoList = currentVideo.unshift ;
-
     const filteredVideo = currentVideo
-    ? this.state.videos.filter(video =>
-      video.id !== currentVideo.id)
-    : videos; 
+      ? this.state.videos.filter(video =>
+        video.id !== currentVideo.id)
+      : videos;
 
-    const videoList= filteredVideo.unshift()
+    const videoList = filteredVideo.unshift();
 
     if (currentVideo === null) {
-      return <p>Loading...</p>
-    }
+      return <div className='loading'></div>
+    };
+
     return (
       <>
-        <HeroVideo currentVideo={currentVideo}/>
+        <HeroVideo currentVideo={currentVideo} />
 
-        <Comments comments= {currentVideo.comments}/> 
+        <Comments comments={currentVideo.comments} />
 
-        <Videos videos={filteredVideo}/>
+        <Videos videos={filteredVideo} />
 
       </>
     )

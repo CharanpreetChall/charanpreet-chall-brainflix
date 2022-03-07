@@ -8,15 +8,15 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
 
+
   return (
 
     <BrowserRouter>
       <Navigation />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/videos/:id" component={Home} />
-        <Route exact path="/upload" component={Upload} />
-        <Route render={() => <h1>ERROR NOT FOUND</h1>} />
+        <Route exact path="/" component={Home} />;
+        <Route path="/videos/:id" component={Home} />;
+        <Route exact path="/upload" component={Upload} />;
       </Switch>
     </BrowserRouter>
 
