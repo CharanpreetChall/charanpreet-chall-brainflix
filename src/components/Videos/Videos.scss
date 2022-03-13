@@ -29,7 +29,7 @@
     }
 }
 
-.videos__list {
+.videos__list { //videos
     padding-top: 5%;
     display: flex;
     flex-wrap: wrap;
@@ -39,7 +39,7 @@
         flex-wrap: nowrap;
     }
 
-    &-item {
+    &-item { //&__list-item
         width: 35%;
 
         @include tablet {

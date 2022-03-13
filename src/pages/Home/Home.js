@@ -5,22 +5,18 @@ import Videos from '../../components/Videos/Videos';
 import React from 'react';
 import axios from 'axios';
 
-const API_key = "?api_key=fbb11fd1-b1f6-4147-a8ae-a87205ac574f"
-const url = "https://project-2-api.herokuapp.com/"
-
-
 class Home extends React.Component {
   state = {
     videos: [],
-    currentVideo: null,
+    currentVideo: [],
   }
 
   componentDidMount() {
     axios
-      .get(`${url}videos${API_key}`)
+      .get('/videos')
       .then(response => {
         this.setState({
-          videos: response.data
+          videos: response.data 
         })
         const videoId = this.props.match.params.id || response.data[0].id;
         this.getVideo(videoId);
@@ -30,7 +26,7 @@ class Home extends React.Component {
 
   getVideo = (videoId) => {
     axios
-      .get(`${url}videos/${videoId}${API_key}`)
+      .get(`/videos/${videoId}`)
       .then(response => {
         this.setState({ currentVideo: response.data })
         window.scrollTo(0, 0)
@@ -53,11 +49,9 @@ class Home extends React.Component {
         video.id !== currentVideo.id)
       : videos;
 
-    const videoList = filteredVideo.unshift();
-
-    if (currentVideo === null) {
+    if (currentVideo.length === 0) {
       return <div className='loading'></div>
-    };
+    }
 
     return (
       <>

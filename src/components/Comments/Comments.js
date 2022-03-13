@@ -1,7 +1,7 @@
 import './Comments.scss';
 import CommentsSection from '../CommentsSection/CommentsSection'
 import avatar from "../../assets/Images/Mohan-muruge.jpg";
-import commentIcon from '../../assets/Icons/add_comment.svg';
+// import commentIcon from '../../assets/Icons/add_comment.svg';
 
 
 

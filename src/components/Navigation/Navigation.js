@@ -4,7 +4,7 @@ import avatar from "../../assets/Images/Mohan-muruge.jpg";
 import { Link } from "react-router-dom";
 import React from 'react';
 
-function Navigation(props) {
+function Navigation() {
 
   return (
     <div>
