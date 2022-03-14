@@ -9,8 +9,8 @@ function CommentSection({ name, timestamp, comment }) {
   return (
 
     <div className="comments-section__item">
-      <div className="comments-section__item-image"></div>
-      <div className="comments-section__item-details">
+      <div className="comments-section__image"></div>
+      <div className="comments-section__details">
         <h2 className="comments-section__name">{name}</h2>
         <h3 className="comments-section__date">{formattedDate}</h3>
         <p className="comments-section__comment paragraph">{comment}</p>

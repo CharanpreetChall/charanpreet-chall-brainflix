@@ -61,50 +61,44 @@
         @include desktop {
             width: 88%;
         }
+    }
 
-        &-comment {
-            @include tablet {
-            }
+    &__form-box {
+        font-family: $font-stack;
+        height: 6rem;
+        background-color: $color-secondary-alabaster;
+        border-color: $color-secondary-mercury;
+        border-radius: 6px;
+        border-style: solid;
 
-            &-box {
-                font-family: $font-stack;
-                height: 6rem;
-                background-color: $color-secondary-alabaster;
-                border-color: $color-secondary-mercury;
-                border-radius: 6px;
-                border-style: solid;
+        @include tablet {
+            width: 100%;
+            height: 1rem;
+            border-radius: 4px;
+            padding: 1.7%;
+            margin-right: 1rem;
+        }
+    }
 
-                @include tablet {
-                    width: 100%;
-                    height: 1rem;
-                    border-radius: 4px;
-                    padding: 1.7%;
-                    margin-right: 1rem;
-                }
-            }
+    &__form-button {
+        margin-top: 1rem;
+
+        @include tablet {
+            margin-top: 0;
         }
 
-        &-button {
-            margin-top: 1rem;
+        &::before {
+            content: url(../../assets/Icons/add_comment.svg);
+            position: relative;
+            right: 45%;
+            margin-right: -13%;
 
             @include tablet {
-                margin-top: 0;
+                right: 3vw;
             }
 
-            &::before {
-                content: url(../../assets/Icons/add_comment.svg);
-                position: relative;
-                // right: 20vw;
-                right: 45%;
-                margin-right: -13%;
-
-                @include tablet {
-                    right: 3vw;
-                }
-
-                @include desktop {
-                    right: 2vw;
-                }
+            @include desktop {
+                right: 2vw;
             }
         }
     }

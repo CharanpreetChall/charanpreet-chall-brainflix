@@ -14,7 +14,7 @@ function Navigation() {
           <img src={logo} className="nav__logo" alt="logo" />
         </ Link>
         <form className="nav__form">
-          <textarea type="txt" placeholder="Search" className="nav__form-search" />
+          <textarea type="text" rows="1" placeholder="Search" className="nav__form-search" />
           <img className="nav__form-image avatar" src={avatar} alt="Mohan Muruge" />
           <Link to='/upload' >
             <button className="nav__form-button form-button">

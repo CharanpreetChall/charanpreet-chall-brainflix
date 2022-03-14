@@ -20,6 +20,10 @@ a {
     color: $color-secondary-dark-black;
 }
 
+textarea {
+    resize: none;
+}
+
 button {
     color: $color-primary-white;
     background-color: $color-primary-blue;

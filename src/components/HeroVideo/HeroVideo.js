@@ -18,7 +18,7 @@ function HeroVideo(props) {
         <section className="hero" >
 
             <div className="hero__section">
-                <video className="hero__section-video" poster={image} alt={title}></video>
+                <video className="hero__section-video" poster={image}></video>
             </div>
 
             <div className="hero__controls">

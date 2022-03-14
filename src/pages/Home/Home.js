@@ -8,7 +8,7 @@ import axios from 'axios';
 class Home extends React.Component {
   state = {
     videos: [],
-    currentVideo: [],
+    currentVideo: {},
   }
 
   componentDidMount() {
@@ -49,7 +49,7 @@ class Home extends React.Component {
         video.id !== currentVideo.id)
       : videos;
 
-    if (currentVideo.length === 0) {
+    if (Object.keys(currentVideo).length === 0) {
       return <div className='loading'></div>
     }
 

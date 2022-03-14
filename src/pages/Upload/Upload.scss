@@ -38,7 +38,6 @@
 
         @include tablet {
             padding: 3% 0 2%;
-            border-bottom: 0.0625rem solid $color-secondary-mercury;
         }
 
         @include desktop {
@@ -55,27 +54,28 @@
         @include desktop {
             width: 32%;
         }
+    }
 
-        &-heading {
-            font-weight: 500;
-            font-size: 12px;
-            padding-bottom: 1%;
+    &__video-heading {
+        font-weight: 500;
+        font-size: 12px;
+        padding-bottom: 1%;
 
-            @include desktop {
-                width: 50%;
-            }
+        @include desktop {
+            width: 50%;
         }
-        &-thumbnail {
-            width: 90vw;
-            border-radius: 2%;
+    }
 
-            @include tablet {
-                width: 50%;
-            }
+    &__video-thumbnail {
+        width: 90vw;
+        border-radius: 2%;
 
-            @include desktop {
-                width: 92%;
-            }
+        @include tablet {
+            width: 50%;
+        }
+
+        @include desktop {
+            width: 92%;
         }
     }
 
@@ -85,44 +85,50 @@
 
         @include desktop {
             width: 52vw;
+            margin-top: -0.5rem;
         }
-
-        &-title {
-            font-weight: 500;
-            font-size: 12px;
-            padding: 4% 0 1%;
-
-            @include tablet {
-                padding: 2.5% 0 0.5%;
-            }
-
-            @include desktop {
-            }
-        }
-        &-box {
-            padding: 4% 3%;
-            font-family: $font-stack;
-            height: 1rem;
-            background-color: $color-secondary-alabaster;
-            border-color: $color-secondary-mercury;
-            border-bottom: 0.0625rem solid $color-secondary-mercury;
-            border-radius: 0.25rem;
-            border-style: solid;
-
-            @include tablet {
-                padding: 1.5%;
-            }
-
-            @include desktop {
-            }
-
-            &-description {
-                height: 5rem;
-            }
-        }
-    
     }
+
+    &__form-title {
+        font-weight: 500;
+        font-size: 12px;
+        padding: 5% 0 1.5%;
+
+        @include tablet {
+            padding: 2.5% 0 0.5%;
+        }
+    }
+    &__form-box {
+        padding: 3.5% 3% 2%;
+        font-family: $font-stack;
+        background-color: $color-secondary-alabaster;
+        border-color: $color-secondary-mercury;
+        border-radius: 0.25rem;
+        border-style: solid;
+
+        @include tablet {
+            padding: 1.5%;
+        }
+
+        @include desktop {
+            padding: 1.6%;
+        }
+    }
+
+    &__border {
+        @include tablet {
+            padding-top: 1.5rem;
+            border-bottom: 0.0625rem solid $color-secondary-mercury;
+            margin-bottom: -1.5rem;
+        }
+
+        @include desktop {
+            margin-left: -21.5rem;
+        }
+    }
+
     &__button {
+        margin-top: 5%;
         margin-left: auto;
 
         @include tablet {
@@ -135,50 +141,57 @@
             margin-right: 5%;
             width: 40%;
         }
+    }
 
-        &-publish {
-            color: $color-primary-white;
-            font-size: 11.2px;
-            margin: 8% 0;
-            border-radius: 4px;
+    &__button-publish {
+        color: $color-primary-white;
+        font-size: 11.2px;
+        margin: 8% 0;
+        border-radius: 4px;
+        width: 90vw;
 
-            @include tablet {
-                margin: 3%;
-                order: 3;
-            }
-
-            @include desktop {
-                padding: 1.3%;
-                font-size: 0.9rem;
-            }
-
-            &::before {
-                content: url(../../assets/Icons/publish.svg);
-                position: relative;
-                right: 40%;
-                margin-right: -10%;
-
-                @include tablet {
-                    left: -30%;
-                    margin-right: -12%;
-                    right: 15vw;
-                }
-            }
+        @include tablet {
+            margin: 3%;
+            order: 3;
+            width: 50%;
         }
 
+        @include desktop {
+            padding: 1.3%;
+            margin: 3% -13% 0 15%;
+            width: 100%;
+        }
 
-        &-cancel {
-            background-color: white;
-            color: $color-primary-blue;
+        &::before {
+            content: url(../../assets/Icons/publish.svg);
+            position: relative;
+            right: 50%;
+            margin-right: -10%;
 
             @include tablet {
-                margin: 3% 0;
+                left: -50%;
+                margin-right: -12%;
+                right: 15vw;
             }
 
             @include desktop {
-                padding: 1.3%;
-                font-size: 0.9rem;
+                left: -25%;
+                margin-right: -10%;
+                right: 15vw;
             }
+        }
+    }
+
+    &__button-cancel {
+        background-color: white;
+        color: $color-primary-blue;
+
+        @include tablet {
+            margin: 3% 0;
+        }
+
+        @include desktop {
+            padding: 1.3%;
         }
     }
 }

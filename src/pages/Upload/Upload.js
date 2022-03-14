@@ -39,23 +39,24 @@ function Upload({ history }) {
         <form className="upload__form" onSubmit={submitHandler}>
 
           <div className="upload__form">
-            <label for="title" className="upload__form-title">TITLE YOUR VIDEO</label>
-            <input className="upload__form-box" id="" name="title" placeholder="Add a title to your video"></input>
+            <h3 for="title" className="upload__form-title">TITLE YOUR VIDEO</h3>
+            <textarea className="upload__form-box" rows="1" name="title" placeholder="Add a title to your video"></textarea>
           </div>
 
           <div className="upload__form">
-            <label for="description" className="upload__form-title">ADD A VIDEO DESCRIPTION</label>
-            <input className="upload__form-box-description" name="description" placeholder="Add a description to your video"></input>
+            <h3 for="description" className="upload__form-title">ADD A VIDEO DESCRIPTION</h3>
+            <textarea className="upload__form-box" rows="4" name="description" placeholder="Add a description to your video"></textarea>
           </div>
+
+          <div className="upload__border"></div>
 
           <div className="upload__button">
             <button className="upload__button-publish form-button" type='submit'>PUBLISH</button>
+
+            <Link to='/' className="upload__button-cancel form-button">
+              CANCEL
+            </Link>
           </div>
-
-          <Link to='/' className="upload__button-cancel form-button">
-            CANCEL
-          </Link>
-
         </form>
       </div>
 

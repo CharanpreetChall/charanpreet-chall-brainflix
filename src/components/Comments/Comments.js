@@ -18,7 +18,7 @@ function Comments({ comments }) {
         <img className="comments__image avatar" src={avatar} alt="Mohan" />
 
         <form className="comments__form" action="" method="">
-          <textarea className="comments__form-comment-box" row="5" id="comments__form-comment" name="comments__form-comment" placeholder="Add a new comment"></textarea>
+          <textarea className="comments__form-box" row="5" id="comments__form-comment" name="comments__form-comment" placeholder="Add a new comment"></textarea>
           <button className="comments__form-button form-button">
             COMMENT
           </button>

@@ -26,34 +26,35 @@
             padding: 3% 0 0;
             height: 5.8rem;
         }
+    }
 
-        &-image {
-            background-color: $color-secondary-mercury;
-            width: 2.2rem;
-            height: 2.2rem;
-            border-radius: 50%;
+    &__image {
+        background-color: $color-secondary-mercury;
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 50%;
 
-            @include tablet {
-                width: 2.5rem;
-                height: 2.5rem;
-            }
-        }
-
-        &-details {
-            width: 80%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            position: relative;
-            left: 18%;
-            top: -2.4rem;
-
-            @include tablet {
-                left: 9%;
-                width: 90%;
-            }
+        @include tablet {
+            width: 2.5rem;
+            height: 2.5rem;
         }
     }
+
+    &__details {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        left: 18%;
+        top: -2.4rem;
+
+        @include tablet {
+            left: 9%;
+            width: 90%;
+        }
+    }
+
     &__comment {
         padding-top: 5%;
 
