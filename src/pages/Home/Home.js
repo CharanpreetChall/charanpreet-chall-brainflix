@@ -13,7 +13,7 @@ class Home extends React.Component {
 
   componentDidMount() {
     axios
-      .get('/videos')
+      .get('https://shielded-earth-31421.herokuapp.com/videos')
       .then(response => {
         this.setState({
           videos: response.data 
@@ -26,7 +26,7 @@ class Home extends React.Component {
 
   getVideo = (videoId) => {
     axios
-      .get(`/videos/${videoId}`)
+      .get(`https://shielded-earth-31421.herokuapp.com/videos/${videoId}`)
       .then(response => {
         this.setState({ currentVideo: response.data })
         window.scrollTo(0, 0)
