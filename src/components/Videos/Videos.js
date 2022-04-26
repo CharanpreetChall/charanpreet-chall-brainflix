@@ -11,7 +11,7 @@ function Videos({ videos }) {
             {videos.map((video) => {
                 return (
 
-                    <Link key={video.id} to={`https://shielded-earth-31421.herokuapp.com/videos/${video.id}`} className="videos__list" >
+                    <Link key={video.id} to={`/videos/${video.id}`} className="videos__list" >
                         <div className="videos__list-item">
                             <img className="videos__image" src={video.image} alt={video.name} />
                         </div>
