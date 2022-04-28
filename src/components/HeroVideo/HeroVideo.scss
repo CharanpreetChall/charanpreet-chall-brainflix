@@ -5,7 +5,7 @@
 @use "../../styles/global" as *;
 
 .hero {
-   padding-top: 5%;
+   padding-top: 1rem;
 
    @include tablet {
       padding-top: 0;
@@ -15,68 +15,33 @@
       display: flex;
       justify-content: center;
       background-color: $color-secondary-dark-black;
-      position: relative;
-      padding-bottom: 56.25%;
-      box-sizing: border-box;
-
-      @include tablet {
-         padding-bottom: 50.25%;
-      }
-
-      @include desktop {
-         padding-bottom: 36.25%;
-      }
-   }
-
-   &__section-video {
-      position: absolute;
-      top: 0;
-      height: 100%;
-
-      @include tablet {
-         margin-left: auto;
-      }
+      aspect-ratio: 16/9;
    }
 
    &__controls {
       position: relative;
-      bottom: 7vw;
+      bottom: 7.5vw;
       display: flex;
       align-items: center;
       justify-content: center;
-
-      @include tablet {
-         width: 95vw;
-         bottom: 6vw;
-         margin: auto;
-      }
-
-      @include desktop {
-         width: 68vw;
-         bottom: 4vw;
-      }
    }
 
    &__play {
       background-color: rgba(0, 0, 0, 0.5);
-      height: 0.5rem;
-      padding: 1% 2.5%;
-      border-radius: 25%;
-
-      @include tablet {
-         height: 0.8rem;
-      }
+      width: 0.5rem;
+      padding: 1.2% 2.5%;
+      border-radius: 0.5rem;
    }
 
    &__scrubber {
       display: flex;
       flex-wrap: wrap;
-      width: 65%;
+      width: 65vw;
       background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 0.28rem;
+      border-radius: 0.5rem;
       margin: 0 1%;
       height: 0.5rem;
-      padding: 1% 2.5%;
+      padding: 1.1% 2.5%;
       justify-content: space-between;
       align-items: center;
 
@@ -86,14 +51,14 @@
    }
 
    &__scrubber-line {
+      position: relative;
       border-radius: 1px;
       border: 1px solid $color-secondary-dark-black;
-      background-color: $color-secondary-dark-black;
       border-radius: 1rem;
-      width: 80%;
+      width: 52vw;
 
       @include tablet {
-         width: 90%;
+         width: 60vw;
       }
    }
 
@@ -104,11 +69,11 @@
 
    &__options {
       background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 0.25rem;
+      border-radius: 0.5rem;
       display: flex;
-      width: 8%;
+      width: 2rem;
       height: 0.5rem;
-      padding: 1% 2%;
+      padding: 1.1% 2%;
       align-items: center;
 
       @include tablet {
@@ -135,30 +100,31 @@
    }
 
    &__container {
-      padding: 1% 5%;
+      padding: 0.2rem 1rem;
 
       @include tablet {
          margin-top: -1rem;
+         padding: 0.2rem 2rem;
       }
 
       @include desktop {
          width: 58vw;
-         padding-left: 13%;
+         padding-left: 10.4rem;
       }
    }
 
    &__heading {
-      padding-bottom: 6%;
+      padding-bottom: 1.1rem;
       border-bottom: 1px solid $color-secondary-mercury;
 
       @include tablet {
-         padding-bottom: 1%;
+         padding-bottom: 0.45rem;
          border-bottom: none;
       }
    }
 
    &__information {
-      padding: 4% 0;
+      padding: 0.75rem 0;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -167,7 +133,7 @@
 
       @include tablet {
          border-top: 0;
-         padding: 3% 0;
+         padding: 1.35rem 0;
          flex-wrap: nowrap;
          height: 0;
       }
@@ -178,11 +144,13 @@
       flex-direction: column;
       justify-content: space-between;
       height: 3rem;
-      width: 40vw;
+      // width: 40vw;
+      width: 40%;
 
       @include tablet {
          flex-direction: row;
-         width: 28%;
+         // width: 28%;
+         // width: 12rem;
          align-items:center;
       }
 
@@ -190,6 +158,22 @@
          padding-right: 5%;
       }
    }
+
+   &__details-one{
+      width: 8rem;
+
+      @include tablet{
+         width: 11rem;
+      }
+   }   
+
+   &__details-two{
+      width: 5.8rem;
+
+      @include tablet{
+         width: 12.5rem;
+      }
+   } 
 
    &__views {
       &::before {
@@ -211,12 +195,12 @@
 
    &__description {
       border-top: 1px solid $color-secondary-mercury;
-      padding: 5% 0;
+      padding: 0.85rem 0;
       font-size: 0.83rem;
       line-height: 1.2rem;
 
       @include tablet {
-         padding: 3% 0 4%;
+         padding: 1.25rem 0 1.75rem;
          line-height: 1.5rem;
       }
    }

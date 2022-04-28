@@ -37,11 +37,11 @@ function HeroVideo(props) {
                 <h1 className="hero__heading">{title}</h1>
 
                 <div className="hero__information">
-                    <div className="hero__details">
+                    <div className="hero__details hero__details-one">
                         <h2 className="hero__channel">By {channel}</h2>
                         <h3 className="hero__date">{formattedDate}</h3>
                     </div>
-                    <div className="hero__details">
+                    <div className="hero__details hero__details-two">
                         <h3 className="hero__views">{views}</h3>
                         <h3 className="hero__likes">{likes}</h3>
                     </div>

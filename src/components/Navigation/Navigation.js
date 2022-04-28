@@ -7,8 +7,6 @@ import React from 'react';
 function Navigation() {
 
   return (
-    <div>
-
       <nav className='nav'>
         <Link to="/" className="nav__logo-link" >
           <img src={logo} className="nav__logo" alt="logo" />
@@ -23,7 +21,6 @@ function Navigation() {
           </Link>
         </form>
       </nav>
-    </div>
   )
 }
 

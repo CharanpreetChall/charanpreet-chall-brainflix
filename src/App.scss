@@ -29,10 +29,20 @@ button {
     background-color: $color-primary-blue;
     border-radius: 4px;
     border: none;
-    padding: 0 2rem;
+    // padding: 0 2rem;
 
     &:hover {
         background-color: $color-secondary-dark-blue;
+    }
+
+    &::before {
+        position: relative;
+        right: 7rem;
+        margin-right: -1.5rem;
+
+        @include tablet{
+            right: 4.5rem;
+        }
     }
 
 }

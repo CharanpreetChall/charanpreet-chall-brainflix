@@ -6,42 +6,39 @@
 
 .videos {
     padding: 5%;
+    padding: 0 1rem 2.5rem;
 
     @include tablet {
-        width: 40%;
+        padding: 0 2rem 2.5rem;
+        width: 20rem;
     }
 
     @include desktop {
         border-left: 1px solid $color-secondary-mercury;
-        width: 20%;
+        width: 20rem;
         position: absolute;
-        top: 43.4vw;
-        left: 71%;
-        padding: 2% 2% 8%;
+        top: 63vw;
+        left: 71vw;
+        padding: 1.5rem 1.5rem 5.5rem;
     }
 
     &__heading {
         font-weight: 500;
-        padding-bottom: 5%;
+        padding-bottom: 1rem;
     }
 
     &__list {
-        padding-top: 5%;
+        width: 18rem;
+        padding-top: 0.9rem;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
-
-        @include tablet {
-            flex-wrap: nowrap;
-        }
     }
 
     &__list-item {
-        width: 35%;
+        width: 6.3rem;
 
         @include tablet {
-            width: 65%;
-            margin-right: -25%;
+            width: 6.5rem;
         }
     }
 
@@ -57,9 +54,5 @@
         width: 100%;
         height: 64px;
         border-radius: 4.8px;
-
-        @include tablet {
-            width: 55%;
-        }
     }
 }
