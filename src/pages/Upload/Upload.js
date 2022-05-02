@@ -7,7 +7,7 @@ import axios from 'axios';
 function Upload({ history }) {
 
   const submitHandler = (event) => {
-    event.preventDefault();
+    event.preventDefault(); 
 
     axios.post('https://shielded-earth-31421.herokuapp.com/videos', {
       title: event.target.title.value,
