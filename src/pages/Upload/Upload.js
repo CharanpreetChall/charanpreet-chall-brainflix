@@ -1,6 +1,6 @@
 import './Upload.scss';
 import React from 'react';
-import uploadVideo from '../../assets/Images/Upload-video-preview.jpg';
+import uploadImage from '../../assets/Images/Upload-video-preview.jpg';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
@@ -12,6 +12,7 @@ function Upload({ history }) {
     axios.post('https://shielded-earth-31421.herokuapp.com/videos', {
       title: event.target.title.value,
       description: event.target.description.value,
+      image: uploadImage
     })
       .then(response => {
         alert('Video uploaded successfully');
@@ -33,7 +34,7 @@ function Upload({ history }) {
 
         <div className="upload__video">
           <h3 className="upload__video-heading">VIDEO THUMBNAIL</h3>
-          <img className="upload__video-thumbnail" src={uploadVideo} alt="Upload vidoe thumbnail" />
+          <img className="upload__video-thumbnail" src={uploadImage} alt="Upload vidoe thumbnail" />
         </div>
 
         <form className="upload__form" onSubmit={submitHandler}>
