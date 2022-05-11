@@ -17,7 +17,8 @@ function Upload({ history }) {
       .then(response => {
         alert('Video uploaded successfully');
 
-        history.push('/')
+        const {id} =response.data;
+        history.push(`videos/${id}`);
       })
       .catch(error => {
         console.log(error);

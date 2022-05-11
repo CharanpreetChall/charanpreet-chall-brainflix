@@ -37,7 +37,8 @@ class Home extends React.Component {
     const videoId = this.props.match.params.id || this.state.videos[0].id;
 
     if (prevProps.match.params.id !== this.props.match.params.id) {
-      this.getVideo(videoId); 
+      this.getVideo(videoId);
+      
     }
   }
 
