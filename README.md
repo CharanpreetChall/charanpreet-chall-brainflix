@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+<p align="left
+"><img src="src/assets/Logo/BrainFlix-logo.svg" align="center"></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
 
-## Available Scripts
+[Academic Project] - A mock SPA (single page application) site for streaming videos. Demonstrating proficiency in React, React-Router, Node, Express, API's as well as other front-end essentials. This project was completed in three weeks. 
 
-In the project directory, you can run:
+## Goals and Requirements
 
-### `npm start`
+My goal was to build a full stack single page application from the ground up. To accomplish this goal I used React, Express, and Node.js. For the styling, we were provided with a mock-up. I was expected to recreate a responsive app according to its specifications.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Learnings
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Fully understood and implemented React fundamentals, including component lifecyle methods, using props and state as well as JSX.
+- Utilized React-Router for declarative routing.
+- Implemented the basics of Node.js and Express, created API endpoints in order to receive and return data.
+- Used Semantic HTML, BEM methodoloy.
+- Flexbox, SAAS, responsive and mobile-first design.
+- Axios
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Clone
 
-### `npm run build`
+- Clone this repo to your local machine using `git@github.com:CharanpreetChall/charanpreet-chall-brainflix.git`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ **1.** Navigate to the client folder in your terminal and install npm like this:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+$ npm install
+```
 
-### `npm run eject`
+ **2.** Setup back:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+go to [brainstation-brainflix-api](https://github.com/CharanpreetChall/charanpreet-chall-brainflix-api) repo
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+*__Make sure to install npm in both the client and server folder__*
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+ **3.** Navigate to the server folder in your terminal and install npm like this:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+$ npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ **4.** While in your server folder run the following:
 
-### Code Splitting
+```
+$npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+![screen](src/Images/brainflix-screen.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h6 align="Center">*Open project and resize browser to see responsiveness across mobile, tablet and desktop settings*</h6>
