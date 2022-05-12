@@ -53,6 +53,6 @@ $npm start
 ```
 
 
-![screen](src/Images/brainflix-screen.png)
+![screen](src/assets/Images/brainflix-screen.png)
 
 <h6 align="Center">*Open project and resize browser to see responsiveness across mobile, tablet and desktop settings*</h6>
